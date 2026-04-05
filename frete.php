@@ -21,6 +21,7 @@
         <button type="submit">Calcular</button>
     </form>
 
+    
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $km = $_POST['km'];

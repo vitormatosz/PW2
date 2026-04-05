@@ -27,6 +27,7 @@
     <title>Calculadora de XP</title>
 </head>
 <body>
+    <h1>Calculador de XP</h1>
     <form method="POST" action="calcxp.php">
         <label>Nível Atual</label>
         <input type="text" name="nivel">
@@ -45,7 +46,7 @@
         if (floatval($xptotal) >= 1000) {
         $nvnovo = (floatval($nvatual) + 1);
         echo "<div><h4>Parabéns você subiu para o nível " . $nvnovo . "</h4>";
-        echo "<h4>XP Total:" . $xptotal . "</h4><div>";
+        echo "<h4>XP Total:" . $xptotal . "</h4></div>";
     } else {
         echo "<div><h4>XP Total:" . $xptotal . "</h4>";
         echo "<h4>Nivel:" . $nvatual . "</h4></div>";
