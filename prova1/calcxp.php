@@ -30,13 +30,13 @@
     <h1>Calculador de XP</h1>
     <form method="POST" action="calcxp.php">
         <label>Nível Atual</label>
-        <input type="text" name="nivel">
+        <input type="text" name="nivel" required>
 
         <label>Xp Acumulado</label>
-        <input type="text" name="xp">
+        <input type="text" name="xp" required>
 
         <label>Dificuldade de Missão</label>
-        <input type="text" name="dificul" placeholder="Ex: Fácil, Média ou Difícil">
+        <input type="text" name="dificul" placeholder="Ex: Fácil, Média ou Difícil" required>
 
         <button type="submit">Calcular</button>
     </form>
