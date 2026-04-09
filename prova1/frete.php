@@ -37,16 +37,18 @@
             (float) $vt += 30;
         }
 
-        if($envio == "expresso") {
+        if(strcasecmp($envio, "Expresso")) {
             $adicional = (floatval($vt) * 0.20);
             floatval($vt += $adicional);
         }
 
-        header("Location: frete.php?resultado=" . number_format($vt, 2));
+        header("Location: frete.php?resultado=" . number_format($vt, 2)); 
+        exit;
     }
 
-    echo "<div><h4>Valor do Frete: R$" . $_GET["resultado"] . "</h4></div>";
-
+   if (isset($_GET["resultado"])) {
+     echo "<div><h4>Valor do Frete: R$" . $_GET["resultado"] . "</h4></div>";
+   }
 ?>
 </body>
 </html>
